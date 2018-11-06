@@ -1,4 +1,7 @@
 # phones_app
+download or clone
+
+enter in the main folder and type: npm install
 
 to start the server enter in the server folder and type: nodemon app.js
 
