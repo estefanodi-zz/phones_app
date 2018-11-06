@@ -1,0 +1,362 @@
+/*************************** MAIN STYLES *************************************/
+.main_container {
+  min-height: 100vh;
+  width: 100%;
+}
+/*************************** NAVBAR STYLES ***********************************/
+.navbar {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  z-index: 100;
+  margin-bottom: 120px;
+}
+
+.navbar_left {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 3em;
+  color: white;
+  letter-spacing: 10px;
+}
+
+.navbar_right {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  outline: none;
+  background: transparent;
+  font-weight: 700;
+  letter-spacing: 5px;
+  border: none;
+  transition: 0.5s;
+}
+
+.button.header_button{
+  color: white;
+  width: 50%;
+  font-size:1em;
+}
+
+.button.header_button:hover {
+  color: gray;
+}
+/*************************** PHONES STYLES ***********************************/
+.phones_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*************************** SINGLE PHONE STYLES *****************************/
+.single_phone_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 170px;
+}
+
+.single_phone_container_left {
+   flex-basis: 50%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.single_phone_container_right {
+   flex-basis: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+.single_phone_model {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.8em;
+   font-weight: 600;
+   letter-spacing: 7px;
+}
+
+.single_phone_description {
+   width: 80%;
+   margin: 0 10%;
+   padding-top: 10%;
+   font-size: 0.9em;
+   font-weight: 300;
+   letter-spacing: 4px;
+   text-align: justify;
+}
+
+.single_phone_color {
+   width: 80%;
+   margin: 0 10%;
+   font-size: 1.2em;
+   font-weight: 300;
+   letter-spacing: 3px;
+   padding-top: 5%;
+}
+
+.single_phone_bottom {
+   width: 80%;
+   margin-left: 10%;
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 10%;
+}
+
+.single_phone_bottom_left {
+   flex-basis: 33.33%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   font-size: 2.5em;
+}
+
+.single_phone_bottom_middle {
+   flex-basis: 33.33%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   font-size: 1em;
+}
+
+.single_phone_bottom_right {
+   flex-basis: 33.33%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.button.page_back_button:hover {
+  color: red;
+}
+
+.single_phone_back {
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 10%;
+}
+/*************************** CREATE PHONE STYLES *****************************/
+.create_phone_container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_container {
+	width: 50%;
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	padding: 2%;
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: row;
+}
+/*************************** SMALL PHONE STYLES ******************************/
+.small_phone_container {
+  width: 20%;
+  border: 2px solid #ddd;
+  height: 550px;
+  border-radius: 5%;
+  display: grid;
+  margin: 0  2.5%;
+  margin-top: 120px;
+  grid-template-rows: 10% 75% 15%;
+}
+
+.small_phone_header {
+  font-size: 1.3em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_phone_image_container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.small_phone_footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.small_phone_footer_left {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+}
+
+.small_phone_footer_right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button.footer_button{
+  color: black;
+}
+
+.button.footer_button:hover {
+  color: red;
+}
+/***************************/
+@media (max-width: 600px) {
+  .navbar {
+    height: 70px;
+  }
+  .navbar_left {
+      flex-basis: 80%;
+      padding-left: 5%;
+      font-size: 1em;
+      letter-spacing: 4px;
+  }
+  .button.header_button{
+    width: 100%;
+    font-size:0.7em;
+  }
+  .small_phone_container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 70px;
+    margin-right: 0;
+    height: 550px;
+    display: grid;
+  }
+  .create_phone_container {
+    padding-top: 100px;
+
+  }
+  .form_container {
+    width: 80%;
+  }
+  .single_phone_container {
+    padding-top: 100px;
+  }
+
+  .single_phone_container_left {
+     flex-basis: 100%;
+  }
+
+  .single_phone_container_right {
+     flex-basis: 100%;
+  }
+  .single_phone_model {
+     font-size: 1.5em;
+     font-weight: 600;
+     letter-spacing: 4px;
+     margin: 10% 0;
+  }
+
+  .single_phone_description {
+     width: 80%;
+     margin: 0 10%;
+     padding-top: 10%;
+     font-size: 0.9em;
+     font-weight: 300;
+     letter-spacing: 4px;
+     text-align: left;
+  }
+  .single_phone_color {
+     width: 100%;
+     margin: 5% 0;
+     font-size: 1.2em;
+     font-weight: 300;
+     letter-spacing: 3px;
+     text-align: center;
+  }
+
+  .single_phone_bottom {
+     width: 80%;
+     margin-left: 10%;
+     display: flex;
+     flex-wrap: wrap;
+     padding-top: 10%;
+  }
+
+  .single_phone_bottom_left {
+     flex-basis: 100%;
+     margin: 5% 0;
+     justify-content: center;
+     font-size: 2em;
+  }
+
+  .single_phone_bottom_middle {
+     flex-basis: 50%;
+     margin: 5% 0;
+     justify-content: center;
+     font-size: 1em;
+  }
+
+  .single_phone_bottom_right {
+     flex-basis: 50%;
+     margin: 5% 0;
+     align-items: center;
+     justify-content: center;
+  }
+  .single_phone_back {
+     justify-content: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .navbar {
+    height: 90px;
+  }
+  .navbar_left {
+      flex-basis: 80%;
+      padding-left: 5%;
+      font-size: 1.9em;
+      letter-spacing: 4px;
+  }
+  .button.header_button{
+    width: 100%;
+    font-size:1.1em;
+  }
+  .small_phone_container {
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 100px;
+    margin-right: 0;
+  }
+  .form_container {
+    width: 80%;
+    margin-top: 100px;
+  }
+}
