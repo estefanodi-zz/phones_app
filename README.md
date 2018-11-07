@@ -1,6 +1,8 @@
 # phones_app
 download or clone
 
+you need to install node,npm,nodemon,mongo
+
 enter in the main folder and type: npm install
 
 to start the server enter in the server folder and type: nodemon app.js
